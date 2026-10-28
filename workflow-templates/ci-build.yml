@@ -14,7 +14,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: HDest-Community/.github/workflows/build-pk3@main
         with:
-          name: HDCoreLib
+          # Uncomment the following if you wish to change the base PK3 name
+          # name: ChangeMe
           suffix: ${{ github.ref_name }}-$(date +'%Y%m%d')
       - uses: actions/upload-artifact@v4
         with:

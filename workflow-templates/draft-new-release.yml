@@ -15,5 +15,6 @@ jobs:
     steps:
       - uses: HDest-Community/.github/workflows/draft-new-release@main
         with:
-          name: HDCoreLib
+          # Uncomment the following if you wish to change the base PK3 name
+          # name: ChangeMe
           version: ${{ inputs.version }}
