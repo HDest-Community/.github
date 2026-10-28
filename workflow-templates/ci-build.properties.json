@@ -1,0 +1,11 @@
+{
+    "name": "Ci Build",
+    "description": "Builds the PK3 on every push to the repo's default branch",
+    "iconName": "octicon archive",
+    "categories": [
+        "Automation"
+    ],
+    "filePatterns": [
+        ".gitattributes$"
+    ]
+}

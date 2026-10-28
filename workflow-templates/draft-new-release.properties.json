@@ -1,0 +1,12 @@
+{
+    "name": "Draft New Release",
+    "description": "Creates a new Release Branch, updates the CHANGELOG.md, commits, and creates a PR for review.",
+    "iconName": "octicon release",
+    "categories": [
+        "Automation"
+    ],
+    "filePatterns": [
+        ".gitattributes$",
+        "CHANGELOG.md$"
+    ]
+}

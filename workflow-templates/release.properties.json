@@ -1,0 +1,12 @@
+{
+    "name": "Publish New Release",
+    "description": "Upon merging a PR from a Release/Hotfix Branch, this will build the PK3, tag the merge commit, create a GitHub Release, and add the PK3 to the assets.",
+    "iconName": "octicon tag",
+    "categories": [
+        "Automation"
+    ],
+    "filePatterns": [
+        ".gitattributes$",
+        "CHANGELOG.md$"
+    ]
+}
