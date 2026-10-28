@@ -51,7 +51,7 @@ runs:
     #     RELEASE_VERSION: ${{ env.RELEASE_VERSION }}
     #   shell:
     #   run: echo "SUFFIX=${{ env.RELEASE_VERSION }}" >> "$GITHUB_OUTPUT"
-    - uses: HDest-Community/.github/.github/workflows/build-pk3
+    - uses: HDest-Community/.github/workflows/build-pk3
       env:
         name: ${{ inputs.name }}
         suffix: ${{ env.RELEASE_VERSION }}
