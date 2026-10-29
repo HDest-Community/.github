@@ -20,5 +20,5 @@ jobs:
         with:
           # Uncomment the following if you wish to change the base PK3 name
           # name: ChangeMe
-          base: ${{ github.event.pull_request.head.ref }}
+          branch: ${{ github.event.pull_request.head.ref }}
           target: ${{ github.event.pull_request.merge_commit_sha }}
