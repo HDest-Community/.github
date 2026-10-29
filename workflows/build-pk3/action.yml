@@ -18,6 +18,4 @@ runs:
   steps:
   - uses: actions/checkout@v4
   - shell:
-    run: 
-  - shell:
     run: git archive --format=zip --output=${{ inputs.name }}-${{ inputs.suffix }}.pk3 ${{ github.sha }}
