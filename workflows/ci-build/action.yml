@@ -23,5 +23,5 @@ runs:
         suffix: ${{ inputs.suffix }}
     - uses: actions/upload-artifact@v4
       with:
-        path: ${{ inputs.name }}-${{ inputs.suffix }}.pk3
+        path: ./*.pk3
         archive: false
