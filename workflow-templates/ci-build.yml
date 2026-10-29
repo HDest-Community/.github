@@ -12,6 +12,6 @@ jobs:
 
     steps:
       - uses: HDest-Community/.github/workflows/ci-build@main
-        with:
-          # Uncomment the following if you wish to change the base PK3 name
-          # name: ChangeMe
+        # Uncomment the following if you wish to change the base PK3 name
+        # with:
+        #   name: ChangeMe
