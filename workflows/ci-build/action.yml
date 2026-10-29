@@ -14,7 +14,7 @@ inputs:
     default: ${{ github.ref_name }}-$(date +'%Y%m%d')
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - uses: actions/checkout@v4
     - uses: HDest-Community/.github/workflows/build-pk3@main

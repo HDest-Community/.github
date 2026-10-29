@@ -14,7 +14,7 @@ inputs:
     default: ${{ github.ref_name }}-$(date +'%Y%m%d')
 
 runs:
-  using: "composite"
+  using: composite
   steps:
   - shell:
     run: git archive --format=zip --output=${{ inputs.name }}-${{ inputs.suffix }}.pk3 ${{ github.sha }}
