@@ -16,12 +16,12 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - uses: HDest-Community/.github/workflows/build-pk3@main
       with:
         name: ${{ inputs.name }}
         suffix: ${{ inputs.suffix }}
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         path: ./*.pk3
         archive: false
