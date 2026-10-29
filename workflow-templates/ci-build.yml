@@ -15,4 +15,3 @@ jobs:
         with:
           # Uncomment the following if you wish to change the base PK3 name
           # name: ChangeMe
-          version: ${{ inputs.version }}
