@@ -19,7 +19,7 @@ runs:
 
     - name: Create release branch
       shell:
-      run: git checkout -b release/${{ github.event.inputs.version }}
+      run: git checkout -b release/v${{ inputs.version }}
 
     - name: Update Changelog
       uses: thomaseizinger/keep-a-changelog-new-release@3.1.0
@@ -37,21 +37,21 @@ runs:
       shell:
       run: |
         git add CHANGELOG.md
-        git commit --message "Prepare release ${{ inputs.version }}"
+        git commit --message "Prepare release v${{ inputs.version }}"
 
         echo "::set-output name=commit::$(git rev-parse HEAD)"
 
     - name: Push New Branch
       shell:
-      run: git push origin release/${{ inputs.version }}
+      run: git push origin release/v${{ inputs.version }}
 
     - name: Create Pull Request
       uses: thomaseizinger/create-pull-request@1.4.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        head: release/${{ inputs.version }}
+        head: release/v${{ inputs.version }}
         base: ${{ inputs.base }}
-        title: Release ${{ inputs.version }}
+        title: Release v${{ inputs.version }}
         reviewers: ${{ github.actor }}
         body: |
           Hi @${{ github.actor }}!
